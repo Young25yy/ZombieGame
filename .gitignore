@@ -1,0 +1,11 @@
+# 忽略所有文件
+*
+
+# 保留 git 配置文件
+!.gitignore
+!.gitattributes
+
+# 只保留 Assets/Scripts 目录
+!Assets/
+!Assets/Scripts/
+!Assets/Scripts/**
