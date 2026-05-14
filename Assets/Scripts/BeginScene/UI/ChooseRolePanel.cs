@@ -15,13 +15,13 @@ public class ChooseRolePanel : BasePanel
     public Button buttonRight;
     public Button buttonNext;
     public Button buttonBack;
-    private Transform heroPos;
+    private Transform rolePoint;
     private GameObject roleObj;
     private RoleInfo roleInfo;
     private int index;
     public override void Init()
     {
-        heroPos = GameObject.Find("HeroPos").transform;
+        rolePoint = GameObject.Find("RolePoint").transform;
         if (GameDataMgr.Instance.nowRole == null)
         {
             index = 0;
@@ -36,14 +36,14 @@ public class ChooseRolePanel : BasePanel
             if (GameDataMgr.Instance.playerData.money >= roleInfo.price)
             {
                 GameDataMgr.Instance.playerData.money -= roleInfo.price;
-                GameDataMgr.Instance.playerData.heroes.Add(roleInfo.id);
+                GameDataMgr.Instance.playerData.hasRolesId.Add(roleInfo.id);
                 GameDataMgr.Instance.SavePlayerData();
                 UpdatePanel();
-                UIManager.Instance.ShowPanel<TipPanel>().SetContent("π∫¬Ú≥…π¶");
+                UIManager.Instance.ShowPanel<TipPanel>().SetContent("Ë¥≠‰π∞ÊàêÂäü");
             }
             else
             {
-                UIManager.Instance.ShowPanel<TipPanel>().SetContent("π∫¬Ú ß∞‹£¨◊ Ω≤ª◊„");
+                UIManager.Instance.ShowPanel<TipPanel>().SetContent("Ë¥≠‰π∞Â§±Ë¥•");
             }
         });
         buttonLeft.onClick.AddListener(() =>
@@ -89,9 +89,10 @@ public class ChooseRolePanel : BasePanel
             Destroy(roleObj);
             roleObj = null;
         }
-        roleObj = Instantiate(Resources.Load<GameObject>(roleInfo.res), heroPos.position, heroPos.rotation);
-        //roleObj.transform.SetParent(heroPos, false);
-        if (roleInfo.price > 0 && !GameDataMgr.Instance.playerData.heroes.Contains(roleInfo.id))
+        roleObj = Instantiate(Resources.Load<GameObject>(roleInfo.res), rolePoint.position, rolePoint.rotation);
+        //roleObj.transform.SetParent(rolePoint, false);
+        roleObj.GetComponent<Player>().enabled = false;
+        if (roleInfo.price > 0 && !GameDataMgr.Instance.playerData.hasRolesId.Contains(roleInfo.id))
         {
             buttonBuy.gameObject.SetActive(true);
             textPrice.text = "$:" + roleInfo.price.ToString();

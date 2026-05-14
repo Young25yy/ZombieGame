@@ -1,0 +1,8 @@
+[
+{"id":1,"res":"Zombie/Z1","animatorRes":"Animator/Zombie/Z1","atk":5,"moveSpeed":3,"rotateSpeed":360,"hp":50,"atkOffset":2.5},
+{"id":2,"res":"Zombie/Z2","animatorRes":"Animator/Zombie/Z2","atk":8,"moveSpeed":4,"rotateSpeed":360,"hp":80,"atkOffset":2},
+{"id":3,"res":"Zombie/Z3","animatorRes":"Animator/Zombie/Z3","atk":15,"moveSpeed":2,"rotateSpeed":360,"hp":160,"atkOffset":3},
+{"id":4,"res":"Zombie/Z4","animatorRes":"Animator/Zombie/Z1","atk":10,"moveSpeed":3.5,"rotateSpeed":360,"hp":100,"atkOffset":1.8},
+{"id":5,"res":"Zombie/Z5","animatorRes":"Animator/Zombie/Z2","atk":25,"moveSpeed":2.5,"rotateSpeed":360,"hp":200,"atkOffset":2},
+{"id":6,"res":"Zombie/Z6","animatorRes":"Animator/Zombie/Z4","atk":40,"moveSpeed":1.5,"rotateSpeed":360,"hp":400,"atkOffset":4}
+]

@@ -1,0 +1,11 @@
+[
+{"id":1,"name":"炮1_1","money":150,"atk":15,"atkRange":8,"offSetTime":1,"nextLev":2,"imgRes":"TowerImage/1_1","res":"Tower/1_1","atkType":1,"eff":"Eff/2"},
+{"id":2,"name":"炮1_2","money":250,"atk":30,"atkRange":9,"offSetTime":0.85,"nextLev":3,"imgRes":"TowerImage/1_2","res":"Tower/1_2","atkType":1,"eff":"Eff/2"},
+{"id":3,"name":"炮1_3","money":400,"atk":50,"atkRange":10,"offSetTime":0.7,"nextLev":0,"imgRes":"TowerImage/1_3","res":"Tower/1_3","atkType":1,"eff":"Eff/2"},
+{"id":4,"name":"炮2_1","money":180,"atk":65,"atkRange":10,"offSetTime":3,"nextLev":5,"imgRes":"TowerImage/2_1","res":"Tower/2_1","atkType":1,"eff":"Eff/2"},
+{"id":5,"name":"炮2_2","money":300,"atk":120,"atkRange":11,"offSetTime":2.8,"nextLev":6,"imgRes":"TowerImage/2_2","res":"Tower/2_2","atkType":1,"eff":"Eff/2"},
+{"id":6,"name":"炮2_3","money":500,"atk":200,"atkRange":12,"offSetTime":2.5,"nextLev":0,"imgRes":"TowerImage/2_3","res":"Tower/2_3","atkType":1,"eff":"Eff/2"},
+{"id":7,"name":"炮3_1","money":220,"atk":25,"atkRange":7,"offSetTime":2.5,"nextLev":8,"imgRes":"TowerImage/3_1","res":"Tower/3_1","atkType":2,"eff":"Eff/2"},
+{"id":8,"name":"炮3_2","money":350,"atk":45,"atkRange":8,"offSetTime":2,"nextLev":9,"imgRes":"TowerImage/3_2","res":"Tower/3_2","atkType":2,"eff":"Eff/2"},
+{"id":9,"name":"炮3_3","money":550,"atk":70,"atkRange":9,"offSetTime":1.8,"nextLev":0,"imgRes":"TowerImage/3_3","res":"Tower/3_3","atkType":2,"eff":"Eff/2"}
+]

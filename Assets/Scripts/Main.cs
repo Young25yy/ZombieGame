@@ -8,5 +8,6 @@ public class Main : MonoBehaviour
     void Start()
     {
         UIManager.Instance.ShowPanel<BeginPanel>();
+        // print(Application.persistentDataPath);
     }
 }

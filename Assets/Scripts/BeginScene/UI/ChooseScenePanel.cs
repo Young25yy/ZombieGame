@@ -38,10 +38,15 @@ public class ChooseScenePanel : BasePanel
         });
         buttonStart.onClick.AddListener(() =>
         {
+            if (!SceneExistsInBuildSettings(sceneInfo.sceneName))
+            {
+                UIManager.Instance.ShowPanel<TipPanel>().SetContent("Êï¨ËØ∑ÊúüÂæÖ!");
+                return;
+            }
             SceneManager.LoadSceneAsync(sceneInfo.sceneName).completed += (ao) =>
             {
+                GameLevelMgr.Instance.Init(sceneInfo);
                 UIManager.Instance.HidePanel<ChooseScenePanel>();
-                UIManager.Instance.ShowPanel<GamePanel>();
             };
         });
         buttonBack.onClick.AddListener(() =>
@@ -53,7 +58,18 @@ public class ChooseScenePanel : BasePanel
     public void UpdatePanel()
     {
         sceneInfo = GameDataMgr.Instance.sceneData[index];
-        textInfo.text = "√˚≥∆£∫\n" + sceneInfo.name + "\nÃ· æ£∫\n" + sceneInfo.tips;
+        textInfo.text = "ÂêçÁß∞:\n" + sceneInfo.name + "\nÊèèËø∞:\n" + sceneInfo.tips;
         imageScene.sprite = Resources.Load<Sprite>(sceneInfo.imgRes);
+    }
+
+    private bool SceneExistsInBuildSettings(string sceneName)
+    {
+        for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
+        {
+            string path = SceneUtility.GetScenePathByBuildIndex(i);
+            if (System.IO.Path.GetFileNameWithoutExtension(path) == sceneName)
+                return true;
+        }
+        return false;
     }
 }

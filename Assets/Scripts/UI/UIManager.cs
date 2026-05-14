@@ -7,7 +7,7 @@ public class UIManager
     private static UIManager instance = new UIManager();
     public static UIManager Instance => instance;
     public Transform canvasTrans;
-    private Dictionary<string, BasePanel> panelDic = new Dictionary<string, BasePanel>();//µ±Ç°ÏÔÊ¾³öÀ´µÄÃæ°å¶¼ÔÚÕâ¸ö×ÖµäÀï
+    private Dictionary<string, BasePanel> panelDic = new Dictionary<string, BasePanel>();//å­—å…¸é‡Œé¢å­˜å‚¨çš„æ˜¯å½“å‰æ˜¾ç¤ºå‡ºæ¥çš„é¢æ¿
     private UIManager()
     {
         GameObject canvas = GameObject.Instantiate(Resources.Load<GameObject>("UI/Canvas"));

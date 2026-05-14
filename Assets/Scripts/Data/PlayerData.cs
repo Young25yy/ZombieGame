@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class PlayerData
 {
-    public int money = 25;
-    public List<int> heroes = new List<int>() { 1 };
+    public int money = 50;
+    public List<int> hasRolesId = new List<int>() { 1 };
 }

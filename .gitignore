@@ -5,7 +5,9 @@
 !.gitignore
 !.gitattributes
 
-# 只保留 Assets/Scripts 目录
+# 保留 Assets/Scripts 和 StreamingAssets 目录
 !Assets/
 !Assets/Scripts/
 !Assets/Scripts/**
+!Assets/StreamingAssets/
+!Assets/StreamingAssets/**

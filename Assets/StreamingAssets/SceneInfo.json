@@ -1,0 +1,5 @@
+[
+{"id":1,"imgRes":"GameSceneImg/1","name":"暗影岛","tips":"佛耶戈","sceneName":"GameScene1","money":500,"shelterHP":800},
+{"id":2,"imgRes":"GameSceneImg/2","name":"祖安","tips":"维克托","sceneName":"GameScene2","money":500,"shelterHP":600},
+{"id":3,"imgRes":"GameSceneImg/3","name":"比尔吉沃特","tips":"普朗克","sceneName":"GameScene3","money":500,"shelterHP":500}
+]

@@ -1,0 +1,8 @@
+[
+{"id":1,"res":"Role/1","atk":10,"name":"周大棒","price":0,"type":1,"hitEff":"Eff/1"},
+{"id":2,"res":"Role/2","atk":25,"name":"周二棒","price":50,"type":2,"hitEff":"Eff/1"},
+{"id":3,"res":"Role/3","atk":45,"name":"周三棒","price":150,"type":2,"hitEff":"Eff/1"},
+{"id":4,"res":"Role/4","atk":25,"name":"周四棒","price":350,"type":2,"hitEff":"Eff/1"},
+{"id":5,"res":"Role/5","atk":120,"name":"周五棒","price":700,"type":2,"hitEff":"Eff/1"},
+{"id":6,"res":"Role/6","atk":500,"name":"周小棒","price":5000,"type":2,"hitEff":"Eff/1"}
+]

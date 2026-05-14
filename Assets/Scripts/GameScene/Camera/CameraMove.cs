@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
     public float moveSpeed;
     public float rotateSpeed;
     public float xOffset;
